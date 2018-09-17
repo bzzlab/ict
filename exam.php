@@ -32,7 +32,7 @@
 <body>
 
 <script id="tpl-web1" type="text/x-handlebars-template">
-    <h3>{{id}}</h3>
+    <h3>{{id}} - Ausgangslage</h3>
     <figure>
         <iframe class="example"  scrolling="no" onload="resizeIframe(this)"
                 src="view_code2.php?file={{path}}/{{start}}&browser=no">
@@ -42,7 +42,7 @@
 
 <script id="tpl-img1" type="text/x-handlebars-template">
     <a class="gotop" href="#top">top</a>
-    <h3>{{id}}</h3><figure><img class="{{size}}" src="{{path}}/{{file}}"/></figure>
+    <h3>{{id}} - Ausgangslage</h3><figure><img class="{{size}}" src="{{path}}/{{file}}"/></figure>
 </script>
 
 

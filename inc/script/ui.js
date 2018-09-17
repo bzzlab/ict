@@ -4,7 +4,6 @@ function resizeIframe(iframe) {
         delta = 26; //Korrektur bei Chrome-Browser
     }
     iframe.height = (iframe.contentWindow.document.body.scrollHeight+delta) + "px";
-    iframe.width= (iframe.contentWindow.document.body.scrollWidth+delta) + "px";
 }
 
 function resizeIframeWidth(iframe,width) {
@@ -13,11 +12,10 @@ function resizeIframeWidth(iframe,width) {
         delta = 26; //Korrektur bei Chrome-Browser
     }
     iframe.height = (iframe.contentWindow.document.body.scrollHeight+delta) + "px";
-
     if (width != null) {
-    	iframe.width = width + "px";
+    	iframe.width = width + "px"; 
     }
-    console.log("iframe.height:" + iframe.height);
+    //console.log("iframe.height:" + iframe.height);
     //console.log("iframe.width:" + iframe.width);
 }
 
