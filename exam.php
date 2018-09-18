@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <title>Test ICT-07 LB01</title>
+    <title>LB-Beiblatt</title>
     <meta charset="UTF-8">
     <?php
     include_once(__DIR__ . "/inc/exam.inc");
@@ -18,9 +18,6 @@
             flex-wrap: wrap;
             justify-content: flex-start;
             align-items: stretch;
-            /*width: inherit;*/
-            /* margin-left: -80px; */
-            /* margin-right: -80px; */
         }
         div.flex-container > iframe.example {
             margin: 0px;
@@ -30,7 +27,16 @@
 </head>
 
 <body>
-
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav" style="float:right;">
+                <li><button type="button" class="btn btn-link" onclick="history.back(-1)">Zurück</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 <script id="tpl-web1" type="text/x-handlebars-template">
     <h3>{{id}} - Ausgangslage</h3>
     <figure>
