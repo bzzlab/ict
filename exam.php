@@ -77,7 +77,6 @@
 </script>
 <?php
     if (isset($_GET["inc"])) {
-        //set_include_path('C:\Users\dgar\Dropbox\wp\wp_php\projects\ict');
         $file = $_GET["inc"];
         include_once($file);
     }
