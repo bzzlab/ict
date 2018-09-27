@@ -27,5 +27,6 @@ $path = "./";
 <script type="text/javascript" src=<?=$path. "inc/script/ui.js" ?>></script>
 <script type="application/javascript"
         src=<?=$path. "inc/script/handlebars-v4.0.11.js" ?>></script>
-<script type="application/javascript"
-        src=<?=$path. "inc/script/swap.js" ?>></script>
+
+<!--<script type="application/javascript"-->
+<!--        src="inc/script/swap.js"></script>-->

@@ -66,13 +66,18 @@ $(document).ready(function() {
         /* determine css-style-file based on the selected button-id, 
          * which are <button id="a1_01, a1_02, a1_03, ...">a1_01 (L)</button>&nbsp;
          */ 
-        var style = e.target.id+".css";        
+        var style = e.target.id+".css";
         var selectedButtonId = e.target.id;
         var prefix = style.substring(0, 3);
         
-        var startSites = ["a1_00_start.html", "a4_00_start.html", "a5_00_start.html", 
-        "a6_00_start.html", "a7_00_start.html", "a8_00_start.html", "a9_00_start.html",
-         "b1_00_start.html"];
+        //ICT-02_LB03
+        /* var startSites = ["a1_00_start.html", "a4_00_start.html", "a5_00_start.html", 
+                "a6_00_start.html", "a7_00_start.html", "a8_00_start.html", "a9_00_start.html",
+                 "b1_00_start.html"];
+        */
+
+
+
         var startSitesLength = startSites.length;
         /* 
         * Determine the path of the iframe with the 
@@ -100,6 +105,7 @@ $(document).ready(function() {
         $("."+prefix+"text").load(stylePath);
         //load source code into frame and show solution
         var url_and_style = addStyleToUrl(url, stylePath);
+
         loadFrame(prefix+"content",url_and_style);
     });
 });
