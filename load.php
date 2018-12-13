@@ -7,8 +7,16 @@ if (isset($_GET["file"])) {
     $file = $teacher->getNewPath($_GET["file"], $lp);
     $content = file_get_contents($file);
     if (isset($_GET["style"])) {
-    	$style = $teacher->getNewPath($_GET["style"], $lp);
-        $content = str_replace("style.css", $style, $content);
+    	$file2 = $teacher->getNewPath($_GET["style"], $lp);
+        $content = str_replace("style.css", $file2, $content);
+    }
+    if (isset($_GET["script"])) {
+    	$file2 = $teacher->getNewPath($_GET["script"], $lp);
+        $content = str_replace("script.js", $file2, $content);
+    }
+    if (isset($_GET["text"])) {
+    	$file2 = $teacher->getNewPath($_GET["text"], $lp);
+        $content = file_get_contents($file2);
     }
 }
 //dump content

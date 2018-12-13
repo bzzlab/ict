@@ -11,6 +11,9 @@ function resizeIframeWidth(iframe,width) {
     if (navigator.userAgent.match("Chrome")) {
         delta = 26; //Korrektur bei Chrome-Browser
     }
+    if (navigator.userAgent.match("Firefox")) {
+        delta = 120; //Korrektur bei Firefox-Browser
+    }
     iframe.height = (iframe.contentWindow.document.body.scrollHeight+delta) + "px";
     if (width != null) {
     	iframe.width = width + "px"; 
