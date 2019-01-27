@@ -57,10 +57,6 @@ $content = new Content();
     <?php
     if (isset($_GET["file"])){
         $teacher = new Teacher();
-//        if (isset($_GET["lp"]) && isset($_GET["sem"])) {
-//            $teacher->setSessionValue($_GET["lp"]);
-//            (new Semester())->setSessionValue($_GET["sem"]);
-//        }
         if (isset($_GET["lp"])) {
             $teacher->setSessionValue($_GET["lp"]);
         }
