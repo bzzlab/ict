@@ -111,7 +111,8 @@ class Navigation
 
 
         //Change url for specific semester
-        if(strcmp($sem, "07")==0 ||
+        if(strcmp($sem, "08")==0 || strcmp($sem, "04")==0 ||
+            strcmp($sem, "07")==0 ||
             strcmp($sem,"03")==0) {
             $base_url = "content.php?inc=1&file=org/" . $sem;
             $topNavList["Agenda"] = $base_url . "/agenda.md";
