@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Setzt und liest die Session-Variablen
  * Created: dgar, 11.01.17

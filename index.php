@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -52,6 +53,7 @@
                     <option value="06">ict-06: Datenbanken</option>
                     <option value="07">ict-07: IT-Sicherheit, Webdesign</option>
                     <option value="08">ict-08: Webprojekt, Repetition</option>
+                    <option value="pw01">pw-01: Projektwoche IPERKA</option>
                 </select>&nbsp;&nbsp;
                 <input  type="submit" class="btn btn-primary" name="contStep02" value="Continue"/>&nbsp;&nbsp;
                 <input type="submit" class="btn btn-light" id="backStep02" name="backStep02" value="Back"/>
