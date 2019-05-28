@@ -1,4 +1,7 @@
 <?php
+error_reporting( E_ALL & ~E_WARNING );
+ini_set('display_errors', 1);
+
 /**
  * Setzt und liest die Session-Variablen
  * Created: dgar, 11.01.17
@@ -8,7 +11,7 @@ class SessionIO
 {
 
     const INVALID = "";
-
+    const SESS_TIMEOUT = ‭604800‬;
     /**
      * SessionIO constructor.
      */
@@ -24,8 +27,8 @@ class SessionIO
             //Quelle: http://stackoverflow.com/questions/520237/how-do-i-expire-a-php-session-after-30-minutes
             if (!isset($_SESSION['CREATED'])) {
                 $_SESSION['CREATED'] = time();
-            } else if (time() - $_SESSION['CREATED'] > 5400) {
-                //set the session to two lessons duration = 90 minutes (90*60 seconds)
+            } else if (time() - $_SESSION['CREATED'] > SessionIO::SESS_TIMEOUT) {
+                //set the session to two lessons duration = 1 Week in seconds (7*24*60*60 seconds)
                 // change session ID for the current session and invalidate old session ID
                 session_regenerate_id(true);
                 // update creation time
