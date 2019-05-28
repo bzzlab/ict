@@ -127,6 +127,15 @@ class Navigation
             //add again Menu "Semster" that should appear as last element
             $topNavList += ["Semester" => "index.php"];
         }
+
+        if((strcmp($sem, "pw01")==0))
+        {
+            $topNavList = array("Home" => $base_url . "/home.md",
+            "FAQ" => $base_url . "/faq.md",
+            "Agenda" => $base_url . "/agenda.md",
+            "Gruppen" => $base_url . "/gruppen.md",
+            "Themen" => $base_url . "/projektthemen.md");
+        }
         return $topNavList;
     }
 
@@ -139,6 +148,16 @@ class Navigation
             "Selfhtml" => "https://wiki.selfhtml.org",
             "Can I use" => "http://caniuse.com/"
         );
+
+
+        if((strcmp($sem, "pw01")==0))
+        {
+            $topNavList = array(
+                "Organisation" => $base_url . "/organisation.md",
+                "Unterlagen" => $base_url . "/unterlagen.md",
+                "Semester" => "index.php?clear=all");
+        }
+
 
         if ((strcmp($sem, "06")==0))
         {
