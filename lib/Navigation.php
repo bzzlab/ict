@@ -112,8 +112,7 @@ class Navigation
 
         //Change url for specific semester
         if(strcmp($sem, "08")==0 || strcmp($sem, "04")==0 ||
-            strcmp($sem, "07")==0 ||
-            strcmp($sem,"03")==0) {
+            strcmp($sem, "07")==0 || strcmp($sem,"03")==0) {
             $base_url = "content.php?inc=1&file=org/" . $sem;
             $topNavList["Agenda"] = $base_url . "/agenda.md";
         }
@@ -130,6 +129,7 @@ class Navigation
 
         if((strcmp($sem, "pw01")==0))
         {
+            $base_url = "content.php?inc=1&file=org/".$sem;
             $topNavList = array("Home" => $base_url . "/home.md",
             "FAQ" => $base_url . "/faq.md",
             "Agenda" => $base_url . "/agenda.md",
@@ -152,6 +152,7 @@ class Navigation
 
         if((strcmp($sem, "pw01")==0))
         {
+           $base_url = "content.php?inc=1&file=org/" . $sem; 
             $topNavList = array(
                 "Organisation" => $base_url . "/organisation.md",
                 "Unterlagen" => $base_url . "/unterlagen.md",
